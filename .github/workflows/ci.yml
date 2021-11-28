@@ -33,8 +33,8 @@ jobs:
           #源目录
           SOURCE: "dist/"
           #服务器Ip:换成你的服务器iP
-          REMOTE_HOST: "121.41.38.82"
+          REMOTE_HOST: ${{ secrets.HOST_IP }}
           #用户
           REMOTE_USER: "root"
           #目标地址
-          TARGET: "/root/vite_demo"
+          TARGET: ${{ secrets.DEPLOY_TARGET_DIR }}
